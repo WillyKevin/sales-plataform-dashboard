@@ -1,0 +1,52 @@
+.body_items_video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body_items_style {
+    background-color: rgb(70, 64, 64);
+    width: 900px;
+    height: 150vh;
+    border-radius: 8px;
+    // margin-top: 6rem;
+    margin-bottom: 25px;
+}
+
+.body_description_items {
+    top: 60px;
+    height: 60px;
+    font-size: 15px;
+    width: 100%;
+    padding: 0px 28px;
+}
+
+.kBoKDO {
+    width: 785px;
+    // height: 50px;
+    // margin: 0px auto;
+    position: sticky;
+    z-index: 9;
+    // display: flex;
+    // -webkit-box-pack: center;
+    // justify-content: center;
+    // -webkit-box-align: center;
+    // align-items: center;
+    background: rgb(245, 247, 249);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    color: rgb(42, 0, 79);
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(22, 97, 172);
+    // top: 75px;
+    // height: 75px;
+    // padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#prancheta_icon{
+    
+}
