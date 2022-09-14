@@ -10,34 +10,39 @@ function VideoCardAluno() {
     return (
         <div className={style.video_card_items}>
             <div className={style.video_card_style}>
-                <div className={style.thumb_video}>
-                    <img id={style.banner_video} src={ bannerVideo1 } alt="banner_vieo" />
-                    <div className={style.play_button}>
-                        <img src={ playButton } alt=""/>
-                    </div>
+                    <img id={style.banner_video_style} src={ bannerVideo1 } alt="banner_video" />
+                    <div className={style.video_card_style_gradient}>
+                        <div className='button_play_style'>
+                            <img id={style.button_play_video} src={ playButton } alt="play_button"/>
+                        </div>
+                    </div>  
 
-                    <div className={style.prev_video_items}>
-                        <div className={style.prev_video}>
-                            <p id={style.video_title_text}>Times Square</p>
-                            <div className={style.video_progress}>
-                                <div className={style.progress_bar}></div>
+                    <div className={style.time_video_style}>
+                        <div className={style.time_video_informations}>
+                            <div className={style.description_video_text}>
+                                <p id={style.video_text}>Times Square</p>
                             </div>
-                            <span id={style.progress_count}>0%</span>
-                        </div>
 
-                        <div className={style.bottom_text}>
-                            <span className={style.group_video_text}>
-                                <img id={style.play_less} src={ PlayLess } alt="play_less"/>
-                                Vídeo: Documentário
-                            </span>
-                        </div>
+                            <div className={style.progress_bar_items}>
+                                <div className={style.video_progress_bar}></div>
+                                <span className={style.video_porcentage}>0%</span>
+                            </div> 
 
-                        <div className={style.favotite_items}>
-                            <img id={style.fav_icon} src={ favItem } alt="" />
-                            <span id={style.fav_text}>Favoritos</span>
+                            <div className={style.description_video_style}>
+                                <div className={style.descriptions_items}>
+                                    <img id={style.play_less_video} src={ PlayLess } alt="seta_next"/>
+                                    <p className={style.description_video_bottom}>Video: Documentário</p>
+                                </div>
+
+                                <div className={style.items_fav}>
+                                    <div className={style.items_fav_video}>
+                                        <img id={style.fav_item} src={ favItem } alt="FavItem"/>
+                                        <p id={style.text_fav}>Favoritos</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </div>       
             </div>
         </div>
     );
