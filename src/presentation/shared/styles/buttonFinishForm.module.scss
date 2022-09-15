@@ -1,0 +1,26 @@
+.button_form_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_form_style {
+    text-transform: uppercase;
+    margin: 8px auto 20px;
+    width: 100%;
+    max-width: 1280px;
+    height: 48px;
+    background: rgb(41, 0, 79);
+    border-radius: 20px;
+    color: rgb(0, 235, 132);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button_form_style:hover {
+    background: rgb(60, 4, 112);
+    color: rgb(9, 243, 141);
+    transition: all 0.2s ease-in-out 0s;
+}

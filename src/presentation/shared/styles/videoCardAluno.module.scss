@@ -29,6 +29,11 @@
     align-items: center;   
 }
 
+.button_play_style {
+    background: none;
+    border: none;
+}
+
 #button_play_video {
     cursor: pointer;
 }
@@ -78,9 +83,6 @@
     // background-color: rgb(57, 4, 117);
     width: 100%;
     height: 70px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 #play_less_video {
@@ -109,16 +111,13 @@
     width: 55px;
     height: 55px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .fav_item {
     margin-bottom: 8px;
     cursor: pointer;
 }
-
-// .fav_item:after {
-//     background-image: url('/src/assets/images/fav-flag-toggled.1b8fb855.svg');
-// }
 
 #text_fav {
     color: #FFF;

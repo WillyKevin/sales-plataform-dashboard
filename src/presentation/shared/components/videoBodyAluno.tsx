@@ -3,15 +3,34 @@ import icon1 from '/src/assets/images/prancheta.bd02f980.svg';
 import icon2 from '/src/assets/images/play_preview.svg';
 
 import style from '../styles/videoBodyAluno.module.scss';
+import ButtonForm from './buttonFinishForm';
 
 function VideoBodyAluno() {
     const cardQuestions = [{
         numberQuestion: '01.',
-        questionText: 'Marque a opção que indica uma parte do dia.'
+        questionText: 'Marque a opção que indica uma parte do dia.',
+        question1: 'place',
+        question2: 'square',
+        question3: 'evening'
 
     }, {
         numberQuestion: '02.',
-        questionText: 'Marque a opção que pode ser traduzida como “enorme”.'
+        questionText: 'Marque a opção que pode ser traduzida como “enorme”.',
+        question1: 'screens',
+        question2: 'brilliant',
+        question3: 'huge'
+    }, {
+        numberQuestion: '03.',
+        questionText: 'Marque a opção que significa ”ano”.',
+        question1: 'year',
+        question2: 'month',
+        question3: 'day'
+    }, {
+        numberQuestion: '04.',
+        questionText: 'Marque a opção que pode ser traduzida como ”um”.',
+        question1: 'the',
+        question2: 'of',
+        question3: 'a'
     }]
     return (
         <div className={style.body_items_video}>
@@ -44,24 +63,26 @@ function VideoBodyAluno() {
                             
                             <div className={style.video_preview_items}>
                                 <div className={style.video_preview_style}>
-                                    <p id={style.question_response}>place</p>
+                                    <p id={style.question_response}>{ item.question1 }</p>
+                                    <span className={style.check_icon}></span>
                                 </div>
                             </div>
                             <div className={style.video_preview_items}>
                                 <div className={style.video_preview_style}>
-                                    <p id={style.question_response}>square</p>
+                                    <p id={style.question_response}>{ item.question2 }</p>
                                 </div>
                             </div>
                             <div className={style.video_preview_items}>
                                 <div className={style.video_preview_style}>
-                                    <p id={style.question_response}>evening</p>
+                                    <p id={style.question_response}>{ item.question3 }</p>
                                 </div>
                             </div> 
                         </div>
                         ))}
                         
                     </div>
-
+                    {/* Botão de concluir teste */}
+                    <ButtonForm />
                 </div>
             </div>
         </div>
