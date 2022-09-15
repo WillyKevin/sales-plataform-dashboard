@@ -67,7 +67,7 @@
 }
 
 .container_questions_style {
-    background-color: rgb(58, 6, 6);
+    background-color: rgb(245, 247, 249);;
     width: 100%;
     height: 385px;
     border-radius: 8px;
@@ -110,6 +110,16 @@
     width: 95%;
     height: 65px;
     border-radius: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#question_response {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 32px;
+    color: rgb(42, 0, 79);
 }
 
 .subtitle_preview_items {

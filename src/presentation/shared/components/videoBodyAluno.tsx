@@ -8,6 +8,7 @@ function VideoBodyAluno() {
     const cardQuestions = [{
         numberQuestion: '01.',
         questionText: 'Marque a opção que indica uma parte do dia.'
+
     }, {
         numberQuestion: '02.',
         questionText: 'Marque a opção que pode ser traduzida como “enorme”.'
@@ -43,9 +44,19 @@ function VideoBodyAluno() {
                             
                             <div className={style.video_preview_items}>
                                 <div className={style.video_preview_style}>
-                                    
+                                    <p id={style.question_response}>place</p>
                                 </div>
-                            </div>   
+                            </div>
+                            <div className={style.video_preview_items}>
+                                <div className={style.video_preview_style}>
+                                    <p id={style.question_response}>square</p>
+                                </div>
+                            </div>
+                            <div className={style.video_preview_items}>
+                                <div className={style.video_preview_style}>
+                                    <p id={style.question_response}>evening</p>
+                                </div>
+                            </div> 
                         </div>
                         ))}
                         
