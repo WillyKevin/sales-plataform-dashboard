@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom'; // importa a função responsável por navegar para outra página
-import BannerCarrosel from '../shared/components/bannerCarrosel';
+
 import BannerHome from '../shared/components/bannerHome';
 import HeaderMenu from '../shared/components/headerMenu';
+import CardClass from './../shared/components/cardClass';
 
 export const HomeComponent: React.FC = () => {
     const navigate = useNavigate();
@@ -11,9 +12,8 @@ export const HomeComponent: React.FC = () => {
                 <HeaderMenu />
                 {/* Transformar o banner em um carrosel e fazer o width responsivo igual no projeto do destiny 2 */}
                 <BannerHome />
-                {/* <BannerCarrosel /> */}
                 {/* Cards Aqui */}
-                <div className='cards_container_items'></div>
+                <CardClass />
                 {/* Footer Aqui */}
                 <div className='footer_container_items'></div>
             </div>

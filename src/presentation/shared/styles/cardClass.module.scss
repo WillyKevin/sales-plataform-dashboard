@@ -1,0 +1,41 @@
+
+.bg_items {
+    font-family: "Nunito",sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.cards_class_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_title_home_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_title_home_style {
+    background-color: rgb(124, 3, 3);
+    width: 90%;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.title_class {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    width: 185px;
+    margin-bottom: 8px;
+}
+
+.cards_class_style {
+    background-color: rgb(124, 3, 3);
+    width: 90%;
+    height: 325px;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
