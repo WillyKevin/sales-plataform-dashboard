@@ -1,8 +1,5 @@
 
 
-// import banner1 from '/src/assets/images/bannerHomeBackground.png';
-// import banner2 from '/src/assets/images/bannerHomeBackground2.png';
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import style from '../styles/bannerHome.module.scss';
+import cardImage2 from '/src/assets/images/banner2Card.jpg';
 
 // import required modules
 import { Navigation } from "swiper";
@@ -36,15 +34,25 @@ function BannerHome() {
                         </div>
                         <div className={style.text_title_items}>
                             <div className={style.text_title_style}>
-                                <p className={style.text_card_title}>{ item.cardTitle }</p>
+                                {/* <p className={style.text_card_title}>{ item.cardTitle }</p> */}
                             </div>
                         </div>
                     </SwiperSlide>
                     {/* Deixar os cards automaticos para criar igual nos videos */}
-                    <SwiperSlide className={style.slide}>Slide 2</SwiperSlide>
-                    <SwiperSlide className={style.slide}>Slide 3</SwiperSlide>
-                    <SwiperSlide className={style.slide}>Slide 4</SwiperSlide>
-                    <SwiperSlide className={style.slide}>Slide 5</SwiperSlide>
+                    <SwiperSlide className={style.slide}>
+                        <div className={style.banner_position}>
+                            <img className={style.bannerImageCard} src={ cardImage2 } alt="imageBanner"/>
+                        </div>
+                        <div className={style.subBanner_position}>
+                            <img className={style.bannerImageCard2} src={ item.subBannerCard } alt="imageBanner2"/>
+                        </div>
+                        <div className={style.text_title_items}>
+                            <div className={style.text_title_style}>
+                                {/* <p className={style.text_card_title}>{ item.cardTitle }</p> */}
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    {/* <SwiperSlide className={style.slide}>Slide 2</SwiperSlide> */}
                 </Swiper>
             </div>
             ))}
