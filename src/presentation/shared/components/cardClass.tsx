@@ -23,7 +23,8 @@ function CardClass() {
         titleVideoCard: 'Nova York'
     }]
     return (
-        <div className={style.bg_items}>
+        <div className={style.bg_items_position}>
+            <div className={style.bg_items}>
             <div className={style.cards_title_home_container}>
                 <div className={style.cards_title_home_style}>
                     <h2 className={style.title_class}>Cities</h2>
@@ -75,6 +76,8 @@ function CardClass() {
                 </div>
             </div>
         </div>
+        </div>
+        
         
     );
 }

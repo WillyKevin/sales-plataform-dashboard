@@ -6,6 +6,18 @@
 
 .bg_img_home {
     background-color: rgb(24, 10, 41);
-    width: 100%;
+    background-size: cover;
+    background-position: center;
     height: auto;
 }
+
+.bg_img_home::after {
+    background-color: rgb(24, 10, 41);
+    // position: absolute;
+    // content: "";
+    // top: 0;
+    // left: 0;
+    height: 150%;
+    width: 100%;
+}
+

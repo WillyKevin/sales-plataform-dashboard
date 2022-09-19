@@ -44,7 +44,8 @@ function VideoBodyAluno() {
                         </div>
                     </div>
                     {/* Questions Cards */}
-                    <div className={style.container_questions}>
+                </div>
+                <div className={style.container_questions}>
                         {cardQuestions.map((item, index) => (
                         <div className={style.container_questions_style}>
                             <div className={style.question_title_items}>
@@ -83,7 +84,6 @@ function VideoBodyAluno() {
                     </div>
                     {/* Botão de concluir teste */}
                     <ButtonForm />
-                </div>
             </div>
         </div>
     );

@@ -1,3 +1,10 @@
+.bg_items_header {
+    font-family: "Nunito",sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .header_styles {
     position: fixed;
     top: 0px;
@@ -11,7 +18,6 @@
 
 #header_logo_home { 
     margin: 20px 56px;
-    
 }
 
 .header_container_items {
@@ -24,7 +30,7 @@
 
 .header_container_styles {
     // background-color: rgb(197, 169, 12);
-    width: 90%;
+    width: 1165px;
     height: 50px;
     border-radius: 8px;
 }
@@ -45,12 +51,17 @@
 }
 .header_item_list {
     color: rgb(190, 177, 201);;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .header_item_list:hover {
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     color: rgb(76, 68, 102);
+}
+
+#home_icon{
+    // background-color: rgb(158, 7, 7);
+    margin-right: -120px;
 }

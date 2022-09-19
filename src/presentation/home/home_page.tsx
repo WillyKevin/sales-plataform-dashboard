@@ -15,6 +15,8 @@ export const HomeComponent: React.FC = () => {
                 {/* Cards Aqui */}
                 <CardClass />
                 <CardClass />
+                <CardClass />
+                <CardClass />
                 {/* Footer Aqui */}
                 <div className='footer_container_items'></div>
             </div>
